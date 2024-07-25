@@ -36,6 +36,151 @@
                     }
                 }
             }
+        },
+        "https://github.com/scilus/nf-scil.git": {
+            "modules": {
+                "nf-scil": {
+                    "betcrop/antsbet": {
+                        "branch": "main",
+                        "git_sha": "0faf13390558954b855736a863aa25d6a0fd4168",
+                        "installed_by": ["modules", "preproc_t1"]
+                    },
+                    "betcrop/cropvolume": {
+                        "branch": "main",
+                        "git_sha": "455be4fdaff99dcb1d81f8adff17da933f71cc87",
+                        "installed_by": ["modules", "preproc_dwi", "preproc_t1"]
+                    },
+                    "betcrop/fslbetcrop": {
+                        "branch": "main",
+                        "git_sha": "0faf13390558954b855736a863aa25d6a0fd4168",
+                        "installed_by": ["modules", "preproc_dwi"]
+                    },
+                    "denoising/mppca": {
+                        "branch": "main",
+                        "git_sha": "cfb3d39567eb7c37b0444443401a911fbd545b87",
+                        "installed_by": ["modules", "preproc_dwi"]
+                    },
+                    "denoising/nlmeans": {
+                        "branch": "main",
+                        "git_sha": "9fcca301737d514b2d0905234905a464e3ab904a",
+                        "installed_by": ["modules", "preproc_t1"]
+                    },
+                    "image/resample": {
+                        "branch": "main",
+                        "git_sha": "cfb3d39567eb7c37b0444443401a911fbd545b87",
+                        "installed_by": ["modules", "preproc_dwi", "preproc_t1"]
+                    },
+                    "preproc/eddy": {
+                        "branch": "main",
+                        "git_sha": "73e1caa1cdb4df02e703fd892bc45134044490e3",
+                        "installed_by": ["modules", "topup_eddy"]
+                    },
+                    "preproc/n4": {
+                        "branch": "main",
+                        "git_sha": "91d37c272dfaa8f35778cec3caea0daf0b0de97b",
+                        "installed_by": ["modules", "preproc_dwi", "preproc_t1"]
+                    },
+                    "preproc/normalize": {
+                        "branch": "main",
+                        "git_sha": "91d37c272dfaa8f35778cec3caea0daf0b0de97b",
+                        "installed_by": ["modules", "preproc_dwi"]
+                    },
+                    "preproc/topup": {
+                        "branch": "main",
+                        "git_sha": "73e1caa1cdb4df02e703fd892bc45134044490e3",
+                        "installed_by": ["modules", "topup_eddy"]
+                    },
+                    "reconst/dtimetrics": {
+                        "branch": "main",
+                        "git_sha": "b1747aed54d75efe4c06a66de39f9d3cc6d844b7",
+                        "installed_by": ["modules"]
+                    },
+                    "reconst/fodf": {
+                        "branch": "main",
+                        "git_sha": "b1747aed54d75efe4c06a66de39f9d3cc6d844b7",
+                        "installed_by": ["modules"]
+                    },
+                    "reconst/frf": {
+                        "branch": "main",
+                        "git_sha": "8faa6f8744aa3cec4fc1e981dbe0533cf53266ed",
+                        "installed_by": ["modules"]
+                    },
+                    "reconst/meanfrf": {
+                        "branch": "main",
+                        "git_sha": "91d37c272dfaa8f35778cec3caea0daf0b0de97b",
+                        "installed_by": ["modules"]
+                    },
+                    "registration/anattodwi": {
+                        "branch": "main",
+                        "git_sha": "703e051e74d39c12315ca9a1dec6c1b0119adcae",
+                        "installed_by": ["registration"]
+                    },
+                    "registration/ants": {
+                        "branch": "main",
+                        "git_sha": "703e051e74d39c12315ca9a1dec6c1b0119adcae",
+                        "installed_by": ["registration"]
+                    },
+                    "registration/antsapplytransforms": {
+                        "branch": "main",
+                        "git_sha": "703e051e74d39c12315ca9a1dec6c1b0119adcae",
+                        "installed_by": ["modules"]
+                    },
+                    "segmentation/fastseg": {
+                        "branch": "main",
+                        "git_sha": "7d0950d3d9f7d2b8309044c7a62c30d8152bf9a2",
+                        "installed_by": ["anatomical_segmentation", "modules"]
+                    },
+                    "segmentation/freesurferseg": {
+                        "branch": "main",
+                        "git_sha": "7d0950d3d9f7d2b8309044c7a62c30d8152bf9a2",
+                        "installed_by": ["anatomical_segmentation", "modules"]
+                    },
+                    "tracking/localtracking": {
+                        "branch": "main",
+                        "git_sha": "b7e89fde0e661974d2396bc9678c31c15a04054a",
+                        "installed_by": ["modules"]
+                    },
+                    "tracking/pfttracking": {
+                        "branch": "main",
+                        "git_sha": "b7e89fde0e661974d2396bc9678c31c15a04054a",
+                        "installed_by": ["modules"]
+                    },
+                    "utils/extractb0": {
+                        "branch": "main",
+                        "git_sha": "3466818964eb0506c51816eb19cedf3585beacf9",
+                        "installed_by": ["modules", "preproc_dwi", "topup_eddy"]
+                    }
+                }
+            },
+            "subworkflows": {
+                "nf-scil": {
+                    "anatomical_segmentation": {
+                        "branch": "main",
+                        "git_sha": "aaae616503fd6180098c470bc85b94aca9aad218",
+                        "installed_by": ["subworkflows"]
+                    },
+                    "preproc_dwi": {
+                        "branch": "main",
+                        "git_sha": "f0f1172241bbb88e20250944b785a228a83f32ef",
+                        "installed_by": ["subworkflows"]
+                    },
+                    "preproc_t1": {
+                        "branch": "main",
+                        "git_sha": "aaae616503fd6180098c470bc85b94aca9aad218",
+                        "installed_by": ["subworkflows"]
+                    },
+                    "registration": {
+                        "branch": "main",
+                        "git_sha": "aaae616503fd6180098c470bc85b94aca9aad218",
+                        "installed_by": ["subworkflows"]
+                    },
+                    "topup_eddy": {
+                        "branch": "main",
+                        "git_sha": "c0823becbebe2a809ddecd8172199fa2c56017fd",
+                        "installed_by": ["preproc_dwi"]
+                    }
+                }
+            }
         }
     }
 }
